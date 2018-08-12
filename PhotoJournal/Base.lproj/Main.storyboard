@@ -23,11 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fif-5H-RsQ">
-                                <rect key="frame" x="16" y="40" width="343" height="424.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fif-5H-RsQ">
+                                <rect key="frame" x="16" y="40" width="343" height="438.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIT-7J-dIa">
-                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="20.5"/>
+                                        <rect key="frame" x="133" y="0.0" width="77.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -38,15 +38,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-EI-YCh">
-                                        <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
-                                        <state key="normal" title="Set Default Label Text"/>
-                                        <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FG6-Tf-E5c"/>
-                                        </connections>
-                                    </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="UBa-K5-ldg">
-                                        <rect key="frame" x="0.0" y="104.5" width="320" height="320"/>
+                                        <rect key="frame" x="11.5" y="66.5" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="UBa-K5-ldg" secondAttribute="height" multiplier="1:1" id="1nj-mm-qNo"/>
@@ -55,6 +48,9 @@
                                             <outletCollection property="gestureRecognizers" destination="qOC-QG-w7i" appends="YES" id="xxy-g3-5Dn"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20L-Pl-3Wt" customClass="FavoriteControl" customModule="PhotoJournal" customModuleProvider="target">
+                                        <rect key="frame" x="149.5" y="394.5" width="44" height="44"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="H77-2T-rrR" secondAttribute="trailing" id="T8g-cd-H2c"/>
@@ -71,6 +67,7 @@
                     <connections>
                         <outlet property="entryTitleLabel" destination="cIT-7J-dIa" id="ZQF-Vh-uoB"/>
                         <outlet property="photoImageView" destination="UBa-K5-ldg" id="NVk-0N-83P"/>
+                        <outlet property="ratingControl" destination="20L-Pl-3Wt" id="7Ny-2O-nUp"/>
                         <outlet property="titleTextField" destination="H77-2T-rrR" id="0fZ-4m-GjW"/>
                     </connections>
                 </viewController>

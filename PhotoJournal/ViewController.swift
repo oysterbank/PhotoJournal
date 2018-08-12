@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var entryTitleLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: FavoriteControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,10 +73,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
-    }
-    
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        entryTitleLabel.text = "Default Text"
     }
 }
 

@@ -13,6 +13,7 @@
 		843BDD5F2118AB1400021C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BDD5E2118AB1400021C3B /* Assets.xcassets */; };
 		843BDD622118AB1400021C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BDD602118AB1400021C3B /* LaunchScreen.storyboard */; };
 		843BDD6D2118AB1400021C3B /* PhotoJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDD6C2118AB1400021C3B /* PhotoJournalTests.swift */; };
+		843BDD7821191B1200021C3B /* FavoriteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BDD7721191B1200021C3B /* FavoriteControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		843BDD682118AB1400021C3B /* PhotoJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BDD6C2118AB1400021C3B /* PhotoJournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalTests.swift; sourceTree = "<group>"; };
 		843BDD6E2118AB1400021C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843BDD7721191B1200021C3B /* FavoriteControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				843BDD572118AB1300021C3B /* AppDelegate.swift */,
 				843BDD592118AB1300021C3B /* ViewController.swift */,
+				843BDD7721191B1200021C3B /* FavoriteControl.swift */,
 				843BDD5B2118AB1300021C3B /* Main.storyboard */,
 				843BDD5E2118AB1400021C3B /* Assets.xcassets */,
 				843BDD602118AB1400021C3B /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 			files = (
 				843BDD5A2118AB1300021C3B /* ViewController.swift in Sources */,
 				843BDD582118AB1300021C3B /* AppDelegate.swift in Sources */,
+				843BDD7821191B1200021C3B /* FavoriteControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
