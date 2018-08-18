@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EntryViewController.swift
 //  PhotoJournal
 //
 //  Created by Kris Laratta on 8/6/18.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate
+class EntryViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
     //MARK: Properties
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var entryTitleLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: FavoriteControl!
     
@@ -36,7 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        entryTitleLabel.text = textField.text
+        
     }
     
     //MARK: UIImagePickerControllerDelegate
